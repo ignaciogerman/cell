@@ -103,13 +103,13 @@
         pair.classList.add('photo-pair');
 
         const img1 = document.createElement('img');
-        img1.src = photo${i}.jpg;
-        img1.alt = Photo ${i};
+        img1.src = `photo${i}.jpg`;
+        img1.alt = `Photo ${i}`;
         img1.onerror = () => { img1.style.display = 'none'; };
 
         const img2 = document.createElement('img');
-        img2.src = photo${i+1}.jpg;
-        img2.alt = Photo ${i+1};
+        img2.src = `photo${i+1}.jpg`;
+        img2.alt = `Photo ${i+1}`;
         img2.onerror = () => { img2.style.display = 'none'; };
 
         pair.appendChild(img1);
